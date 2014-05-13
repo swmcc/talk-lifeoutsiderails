@@ -1,4 +1,4 @@
-# app
+# Life Outside Rails 
 
 **lifeoutside·rails**  */ˈlifeoutsideˌrails/*
 
