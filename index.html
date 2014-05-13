@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Life Outside Rails</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" coaintent="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>Life Outside Rails</h1>
+					<p>
+						<small>Created by <a href="http://swm.cc">Stephen McCullough</a> / <a href="http://swm.cc">@swmcc</a></small>
+					</p>
+				</section>
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Not Anti Rails</h2>
+            <p>
+            This isn't an anti rails talk. I just think there is more to Ruby than just rails.
+						</p>
+							<img src="/img/development-ruby_on_rails.png" alt="Ruby On Rails">
+					</section>
+					<section>
+						<h2>What comes to mind then?</h2>
+							<img src="/img/first_thing_that_comes_to_mind_by_xquatrox-d3e8rs1.png" alt="What comes to mind?">
+					</section>
+					<section>
+						<h2>Sinatra</h2>
+							<img src="/img/ruby-rails-sinatra.jpg.jpg" alt="What comes to mind?">
+					</section>
+					<section>
+						<h2>Padrino</h2>
+							<img src="/img/glass.png" alt="Padrino">
+					</section>
+
+					<section>
+						<h2>Jekyll</h2>
+							<img src="/img/jekyll.png" alt="Jekyll">
+					</section>
+					<section>
+						<h2>Grape</h2>
+							<img src="/img/grape.png" alt="Grape">
+					</section>
+					<section>
+						<h2>Cuba</h2>
+							<img src="/img/cuba.png" alt="Cuba">
+					</section>
+					<section>
+						<h2>Camping</h2>
+							<img src="/img/camping.png" alt="Camping">
+					</section>
+
+				</section>
+
+				<section>
+         <section>
+					<h2>What, no frameworks?</h2>
+          <img src="/img/no_framework.png" alt="No frame work!!">
+         </section> 
+          <section>
+          <h2>What if I told you that...</h2>
+          <p>You don't have to use a fecking framework!</p>
+          </section>
+          <section>
+          <h2>What I use Ruby for</h2>
+          <p><ul>
+            <li>CSV Parser</li>
+            <li>Task management</li>
+            <li>Static Generator</li>
+            <li>ActiveRecord</li>
+            <li>Building libs for a legacy system</li>
+          </ul></p>
+          </section>
+          <section>
+          <h2>I also use Ruby for...</h2>
+          <p><ul>
+            <li>Prototyping (jekyll)</li>
+            <li>API Creation (grape)</li>
+            <li>Sys Admin scripts</li>
+          </ul>
+          </p>
+          </section>
+
+				</section>
+
+				<section>
+					<h2>I only use Rails</h2>
+          <ul>
+            <li>When I have a clear defention of success</li>
+            <li>My other team members are happy with the choice</li>
+            <li>Convention over configuration makes sense</li>
+            <li>New code base</li>
+          </ul>
+
+				</section>
+
+				<section>
+					<h3>Is there much sense in not using Rails?</h3>
+          <ul>
+            <li>No (simples)</li>
+          </ul>
+				</section>
+				<section>
+					<h1>THE END</h1>
+					<h3>BY Stephen McCullough / swm.cc</h3>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				//theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        theme: 'sky',
+				transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+        transitionsSpeed: 'slow',
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
